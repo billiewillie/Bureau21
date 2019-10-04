@@ -122,12 +122,17 @@ h2.title {
 
   .wrapper{
     &.wrapper--index{
-      padding: 0 50px 0 0;
+      padding: 30px 30px 30px 0;
       flex-direction: row;
     }
   }
+}
 
-  .oversize .container {
-    padding: 0 30px;
+@media (min-width: 1200px) {
+
+  .wrapper{
+    &.wrapper--index{
+      padding: 50px 50px 50px 0;
+    }
   }
 }

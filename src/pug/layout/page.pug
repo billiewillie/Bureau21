@@ -21,5 +21,29 @@ html(lang="en")
     title Bureau21
   body.body
     div.wrapper
+      header.header.hidden__md
+        h1.logo 
+          img(src="/assets/img/logo-small.svg", alt="logo")
+        .burger.hidden__md
+          input#menu-switch(type="checkbox")
+          nav#navigation
+            .logo__part
+              img(src="/assets/img/logo-part-bottom.svg", alt="logo")
+            ul.list
+              li.item
+                a.link(href="") о бюро
+              li.item
+                a.link(href="") контакты
+              li.item
+                a.link(href="") События
+              li.item
+                a.link(href="") партнеры
+              li.item
+                a.link(href="")
+                  span.special Онлайн-галерея
+                  br
+                  | Штефана Шпихера
+      include ../includes/module/sidebar
       block content
+        p hello
       include ../includes/module/footer

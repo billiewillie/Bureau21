@@ -7,6 +7,15 @@ header.header {
   width: 100%;
   position: relative;
 
+  & a.logo{
+    height: 70px;
+    padding: 10px 0 10px 50px;
+    & img{
+      display: block;
+      height: 100%;
+    }
+  }
+
   &.visible__md{
     display: none;
   }
@@ -87,14 +96,19 @@ header.header {
         }
       }
     }
-    & .call{
-      padding: 0 20px 0 30px;
-      font-size: $fz3;
-      & a.number{
-        font-size: $fz4;
-        font-weight: $bold;
-        margin-top: 5px;
-        display: inline-block;
+    & .contact{
+      & .call{
+        font-size: $fz3;
+        padding-left: 30px;
+        & a.number{
+          font-size: $fz4;
+          font-weight: $bold;
+          margin-top: 5px;
+          display: inline-block;
+        }
+        &:first-child{
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -120,8 +134,10 @@ header.header {
       padding: 0 20px 0 50px;
       margin-bottom: 0;
     }
-    & .call{
-      padding: 0 20px 0 50px;
+    & .contact{
+      & .call{
+        padding-left: 50px;
+      }
     }
   }
 }

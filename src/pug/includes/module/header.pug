@@ -1,11 +1,9 @@
 header.header.hidden__md
-  h1.logo 
-    img(src="/assets/img/logo-small.svg", alt="logo")
+  a.logo 
+    img(src="/assets/img/logo.svg", alt="logo")
   .burger.hidden__md
     input#menu-switch(type="checkbox")
     nav#navigation
-      .logo__part
-        img(src="/assets/img/logo-part-bottom.svg", alt="logo")
       ul.list
         li.item
           a.link(href="") о бюро
@@ -28,9 +26,11 @@ header.header.hidden__md
           | Обширная география: 
           br
           | Россия, США, Италия, Германия, Франция, Латвия
-      .call
-        span Позвоните:
-        a.number(href="tel:+79219444525") +7 (921) 944 45 25
+      .contact
+        .call
+          a.number(href="tel:+79219444525") Позвонить
+        .call
+          a.number(href="mailto:studio21.spb@gmail.com") Написать
     label.menu-switch(for='menu-switch')
       span
 header.header.visible__md
@@ -57,8 +57,15 @@ header.header.visible__md
     p 
       | Обширная география: 
       br
-      | Россия, США, Италия, Германия, Франция, Латвия
-  .call
-    span Позвоните:
-    br
-    a.number(href="tel:+79219444525") +7 (921) 944 45 25
+      | Россия, США, Италия, Германия, 
+      br
+      | Франция, Латвия
+  .contact
+    .call
+      span Позвонить:
+      br
+      a.number(href="tel:+79219444525") +7 (921) 944 45 25
+    .call
+      span Написать:
+      br
+      a.number(href="mailto:studio21.spb@gmail.com") studio21.spb@gmail.com

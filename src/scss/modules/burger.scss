@@ -1,13 +1,13 @@
 .burger {
   width: 86px;
-  height: 86px;
+  height: 70px;
   cursor: pointer;
   z-index: 1;
   position: relative;
 
   & .menu-switch{
     width: 86px;
-    height: 86px;
+    height: 70px;
     position: absolute;
     right: 0;
     top: 0;
@@ -85,14 +85,14 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    top: 86px;
+    top: 70px;
     left: 0;
     justify-content: space-between;
     background: $white;
     transition: all 0.3s ease-in-out;
     transform: translate(0, 90px);
     opacity: 0;
-    padding-bottom: 20px;
+    padding-top: 5px;
     pointer-events: none;
 
     & ul.list{
@@ -104,13 +104,13 @@
 
       & li.item{
         transition: .2s;
-        padding: 0 20px;
+        padding: 0 50px;
         
         & a.link{
           font-size: $fz3;
           text-transform: uppercase;
           line-height: $lineHeight2;
-          padding: 5px 0;
+          padding: 15px 0;
           display: block;
           border-bottom: 1px solid $gray;
 
@@ -122,6 +122,9 @@
         &:last-child{
           background-color: $gray;
           border-bottom: none;
+          & a.link{
+            padding: 10px 0;
+          }
         }
         &:nth-child(4){
           border-bottom: none;
@@ -130,8 +133,8 @@
     }
 
     & .about{
-      font-size: $fz3;
-      padding: 0 20px;
+      font-size: $fz12;
+      padding: 0 50px;
       & p{
         margin-bottom: 10px;
         &:last-child{
@@ -139,17 +142,27 @@
         }
       }
     }
-    & .call{
-      padding: 0 20px;
-      & span{
-        font-size: $fz3;
-        display: block;
-        margin-bottom: 5px;
-      }
-      & a.number{
-        font-size: $fz4;
-        font-weight: $bold;
-        display: block;
+    & .contact{
+      background-color: $textColor;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      & .call{
+        & a.number{
+          font-size: $fz1;
+          display: block;
+          border: 1.5px solid $white;
+          color: $white;
+          width: 112px;
+          font-weight: $semiBold;
+          text-align: center;
+          display: inline-block;
+          padding: 10px 25px;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -161,6 +174,7 @@
     cursor: default;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.2);
   }
 }
 

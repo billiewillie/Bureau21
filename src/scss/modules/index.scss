@@ -7,29 +7,37 @@ main.main{
   width: 100%;
   & .part{
     flex-grow: 1;
-    background-image: url('/assets/img/index/pic-1.jpg');
-    background-position: 100% 80%;
+    background-image: url('/assets/img/index/pic-1-mobile.jpg');
+    background-position: 100% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     & a{
       color: $white;
       text-transform: uppercase;
-      display: block;
-      background-color: rgba(47,48,66,.9);
+      display: flex;
+      background-color: $darkBlue;
       padding: 10px;
       font-weight: $regular;
+      width: 68%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
       & span:first-child {
-        margin-bottom: 20px;
         display: block;
       }
       & span:last-child{
-        display: block;
+        display: none;
         font-size: $fz2;
         letter-spacing: .1em;
         position: relative;
+        color: $white;
         &::after{
           display: block;
           position: absolute;
@@ -38,8 +46,8 @@ main.main{
           right: 0;
           bottom: 0;
           margin: auto;
-          width: 40px;
-          height: 4px;
+          width: 25px;
+          height: 8px;
           background-image: url('/assets/img/icons/arrow-right.svg');
           background-size: contain;
           background-position: 100% 50%;
@@ -49,8 +57,25 @@ main.main{
     }
     
     &:last-child {
-      background-image: url('/assets/img/index/pic-2.jpg');
-      background-position: 0% 0%;
+      background-image: url('/assets/img/index/pic-2-mobile.jpg');
+      background-position: 100% 50%;
+      & a{
+        background-color: $brown;
+      }
+    }
+
+    &::after{
+      display: block;
+      position: absolute;
+      content: '';
+      right: 25px;
+      bottom: 25px;
+      width: 25px;
+      height: 8px;
+      background-image: url('/assets/img/icons/arrow-right.svg');
+      background-size: contain;
+      background-position: 50%;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -67,6 +92,7 @@ main.main{
       padding: 50px 0;
       position: relative;
       background-attachment: scroll, scroll;
+      background-image: url('/assets/img/index/pic-1.jpg');
       backface-visibility: hidden;
       transform: perspective(1000px);
       -webkit-transition: -webkit-transform 250ms cubic-bezier(.632,.002,.368,.997);
@@ -80,6 +106,9 @@ main.main{
         font-weight: $regular;
         transition: .5s;
         padding: 110px 30px 40px;
+        position: relative;
+        width: 100%;
+        height: auto;
         & span:first-child {
           margin-bottom: 90px;
           display: block;
@@ -102,6 +131,16 @@ main.main{
       &:last-child {
         width: 40%;
         background-position: 10% 50%;
+        background-image: url('/assets/img/index/pic-2.jpg');
+        & a{
+          background-color: transparent;
+        }
+        &:hover{
+          & a{
+            background-color: rgba(88,79,83,.9);
+          }
+          
+        }
       }
       &:hover{
         box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
@@ -116,6 +155,9 @@ main.main{
             transform: translateX(0px) translateY(0vh) translateZ(0px);
           }
         }
+      }
+      &::after{
+        display: none;
       }
     }
   }

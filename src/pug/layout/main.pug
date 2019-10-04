@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(
+      rel="icon" 
+      href="./assets/img/icons/favicon.png",
+      type="image/x-icon")
+    link(
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext", 
+      rel="stylesheet")
+    meta(
+      name="viewport", 
+      content="width=device-width, initial-scale=1.0")
+    meta(
+      http-equiv="X-UA-Compatible", 
+      content="ie=edge")
+    meta(
+      name='description' 
+      content="Сайт проектного бюро Bureau21")
+    title Bureau21
+  body.body
+    div.wrapper.wrapper--index
+      include ../includes/module/header
+      block content
+        p hello

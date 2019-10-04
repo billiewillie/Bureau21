@@ -1,0 +1,18 @@
+form.form
+  input(type="hidden" name="project_name" value="Бизнес-центр")
+  input(type="hidden" name="admin_email" value="v.belinovich@uno-agency.ru")
+  input(type="hidden" name="form_subject" value="Вопрос с формы сайта protiv-grippa")
+  h2.title Задать вопрос о&nbsp;препарате
+  .form__field
+    input.input(type="text" name='имя' required)
+    span.bar
+    label Ваше имя
+  .form__field
+    input.input(type="text" name='email' required)
+    span.bar
+    label Ваш e-mail
+  .form__field
+    textarea.textarea(name='вопрос' required)
+    label Ваш вопрос
+  .form__field
+    button.button Отправить

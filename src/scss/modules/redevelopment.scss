@@ -1,21 +1,77 @@
 .redevelopment{
   & .page__top{
-    background-image: url('/assets/img/design/redevelopment-bg-small.jpg');
+    background-image: url('/assets/img/redevelopment/redevelopment-bg-small.jpg');
+  }
+  & .about{
+    & .container{
+      & .part{
+        & p.text{
+          font-size: $fz4;
+        }
+        &:first-child{
+          & p.text{
+            &:first-child{
+              font-size: $fz9;
+              font-weight: $bold;
+              padding-bottom: 30px;
+              margin-bottom: 30px;
+              position: relative;
+              &::after{
+                display: block;
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                width: 47px;
+                height: 2px;
+                background-color: $brown;
+              }
+            }
+          }
+        }
+        &:last-child{
+          padding: 20px 10px;
+          & p.text{
+            font-weight: $semiBold;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 767px) {
-  .design{
+  .redevelopment{
     & .page__top{
-      background-image: url('/assets/img/design/redevelopment-bg-ipad.jpg');
+      background-image: url('/assets/img/redevelopment/redevelopment-bg-ipad.jpg');
     }
   }
 }
 
 @media (min-width: 992px) {
-  .design{
+  .redevelopment{
     & .page__top{
-      background-image: url('/assets/img/design/redevelopment-bg.jpg');
+      background-image: url('/assets/img/redevelopment/redevelopment-bg.jpg');
+    }
+    & .about{
+      & .container{
+        & .part{
+          &:first-child{
+            padding-right: 100px;
+            & p.text{
+              &:first-child{
+                font-size: $fz25;
+              }
+            }
+          }
+          &:last-child{
+            max-width: 45%;
+            padding: 70px 90px;
+            margin-top: -97px;
+          }
+        }
+      }
     }
   }
 }

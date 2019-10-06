@@ -46,22 +46,13 @@ footer.footer {
         margin-bottom: 0;
       }
       & .button{
-        background-color: transparent;
         text-align: left;
         padding: 0;
         margin-bottom: 0;
         & a{
-          position: relative;
-          display: inline-block;
-          padding: 10px 55px 10px 40px;
           color: $white;
-          font-size: $fz5;
-          border: 3px solid $middleGray;
+          border-color: $middleGray;
           background-image: url('/assets/img/icons/arrow-send.svg');
-          background-position: 90% 50%;
-          background-size: auto 35%;
-          background-repeat: no-repeat;
-          font-weight: $semiBold;
         }
       }
     }

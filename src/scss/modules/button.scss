@@ -1,0 +1,23 @@
+.button {
+  & a{
+    position: relative;
+    display: inline-block;
+    font-size: $fz5;
+    background-color: transparent;
+    font-weight: $semiBold;
+    text-transform: uppercase;
+    transition: .2s;
+    cursor: pointer;
+    padding: 10px 55px 10px 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $textColor;
+    background-image: url('/assets/img/icons/arrow-send-black.svg');
+    background-position: 90% 50%;
+    background-size: auto 35%;
+    background-repeat: no-repeat;
+    &:hover{
+      background-position: 95% 50%;
+    }
+  }
+}

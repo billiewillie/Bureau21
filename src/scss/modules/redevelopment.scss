@@ -1,0 +1,21 @@
+.redevelopment{
+  & .page__top{
+    background-image: url('/assets/img/design/redevelopment-bg-small.jpg');
+  }
+}
+
+@media (min-width: 767px) {
+  .design{
+    & .page__top{
+      background-image: url('/assets/img/design/redevelopment-bg-ipad.jpg');
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .design{
+    & .page__top{
+      background-image: url('/assets/img/design/redevelopment-bg.jpg');
+    }
+  }
+}

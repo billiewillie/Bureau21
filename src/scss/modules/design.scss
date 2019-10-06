@@ -1,0 +1,21 @@
+.design{
+  & .page__top{
+    background-image: url('/assets/img/design/design-bg-small.jpg');
+  }
+}
+
+@media (min-width: 767px) {
+  .design{
+    & .page__top{
+      background-image: url('/assets/img/design/design-bg-ipad.jpg');
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .design{
+    & .page__top{
+      background-image: url('/assets/img/design/design-bg.jpg');
+    }
+  }
+}

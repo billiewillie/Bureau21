@@ -1,77 +1,93 @@
 footer.footer {
-  background-color: $darkBlue;
-  padding: 70px 0 0px;
+  background-color: $textColor;
+  padding: 40px 0;
   color: $white;
-  border-top-left-radius: 100% 30px;
-  border-top-right-radius: 100% 30px;
-  margin-top: -15px;
   z-index: 1;
   & .container{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     & .part{
       width: 100%;
-      order: 2;
       margin-bottom: 20px;
-      &:nth-child(1) {
-        & a{
-          display: block;
-          color: $white;
-          &:hover{
-            text-decoration: underline;
+      display: inline-block;
+      & h3.title{
+        letter-spacing: $ls2;
+        font-size: $fz3;
+        font-weight: $semiBold;
+        margin-bottom: 10px;
+      }
+      & ul.list{
+        & li.item{
+          margin-bottom: 5px;
+          & a{
+            display: inline-block;
+            color: $white;
+            font-size: $fz3;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          &:last-child{
+            margin-bottom: 0;
           }
         }
       }
-      &:nth-child(2) {
-        order: 1;
+      &:nth-child(1){
+        & ul.list{
+          & li.item{
+            & a{
+              text-transform: capitalize;
+            }
+          }
+        }
       }
       &:last-child{
-        & p{
-          margin-bottom: 5px;
+        margin-bottom: 0;
+      }
+      & .button{
+        background-color: transparent;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 0;
+        & a{
+          position: relative;
+          display: inline-block;
+          padding: 10px 55px 10px 40px;
+          color: $white;
+          font-size: $fz5;
+          border: 3px solid $middleGray;
+          background-image: url('/assets/img/icons/arrow-send.svg');
+          background-position: 90% 50%;
+          background-size: auto 35%;
+          background-repeat: no-repeat;
+          font-weight: $semiBold;
         }
       }
     }
-    & .madein{
-      & a{
-        color: $white;
-      }
-    }
-  }
-  & p.warning{
-    padding: 10px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-weight: $light;
-    text-align: center;
-    background-color: $blue;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   footer.footer {
-    border-top-left-radius: 100% 80px;
-    border-top-right-radius: 100% 80px;
-    margin-top: -40px;
     & .container{
       flex-direction: row;
-      justify-content: center;
-      align-items: space-between;
+      justify-content: space-between;
+      align-items: flex-start;
       & .part{
-        width: 250px;
         margin-bottom: 0;
-        &:nth-child(2){
-          align-self: center;
-          order: 2;
-        }
-        &:nth-child(1){
-          order: 1;
-        }
-        &:last-child{
-          & p{
-            margin-bottom: 15px;
-          }
+        & h3.title{
+          margin-bottom: 20px;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  footer.footer {
+    & .container{
+      padding: 0 10px;
     }
   }
 }

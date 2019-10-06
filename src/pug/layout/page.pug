@@ -20,15 +20,13 @@ html(lang="en")
       content="Сайт проектного бюро Bureau21")
     title Bureau21
   body.body
-    div.wrapper
+    div.wrapper.wrapper--page
       header.header.hidden__md
-        h1.logo 
-          img(src="/assets/img/logo-small.svg", alt="logo")
+        a.logo(href="/")
+          img(src="/assets/img/logo.svg", alt="logo")
         .burger.hidden__md
           input#menu-switch(type="checkbox")
           nav#navigation
-            .logo__part
-              img(src="/assets/img/logo-part-bottom.svg", alt="logo")
             ul.list
               li.item
                 a.link(href="") о бюро
@@ -43,7 +41,21 @@ html(lang="en")
                   span.special Онлайн-галерея
                   br
                   | Штефана Шпихера
+            .about
+              p Более 19 лет успешной работы
+              p Более 200 частных объектов
+              p Более 70 общественных объектов
+              p 
+                | Обширная география: 
+                br
+                | Россия, США, Италия, Германия, Франция, Латвия
+            .contact
+              .call
+                a.number(href="tel:+79219444525") Позвонить
+              .call
+                a.number(href="mailto:studio21.spb@gmail.com") Написать
+          label.menu-switch(for='menu-switch')
+            span
       include ../includes/module/sidebar
       block content
-        p hello
       include ../includes/module/footer

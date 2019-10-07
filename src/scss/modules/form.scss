@@ -133,7 +133,7 @@ form.form {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $smDesktopWidth) {
   form.form {
     padding: 40px 40px 0 40px;
   }

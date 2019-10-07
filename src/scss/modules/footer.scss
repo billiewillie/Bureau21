@@ -59,7 +59,21 @@ footer.footer {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tablet){
+  footer.footer{
+    footer.footer {
+      & .container{
+        & .part{
+          & h3.title{
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $smDesktopWidth) {
   footer.footer {
     & .container{
       flex-direction: row;
@@ -67,9 +81,6 @@ footer.footer {
       align-items: flex-start;
       & .part{
         margin-bottom: 0;
-        & h3.title{
-          margin-bottom: 20px;
-        }
       }
     }
   }

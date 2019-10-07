@@ -44,7 +44,7 @@ a {
 .container {
   padding: 0 10px;
   width: 100%;
-  max-width: 1010px;
+  max-width: 1030px;
   margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ h2.title {
 
 .page__top{
   padding: 50px 0;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
   & h1.title{
@@ -100,6 +100,8 @@ h2.title {
   display: none;
 }
 
+@import "modules/gallery.scss";
+
 @import "modules/header.scss";
 
 @import "modules/menu.scss";
@@ -124,7 +126,7 @@ h2.title {
 
 @import "modules/slick-theme.scss";
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .visible__sm {
     display: block;
   }
@@ -134,7 +136,7 @@ h2.title {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $smDesktopWidth) {
   .hidden__md{
     display: none;
   }

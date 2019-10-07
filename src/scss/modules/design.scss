@@ -65,6 +65,63 @@
       }
     }
   }
+  & .details{
+    & .part{
+      &:first-child{
+        padding: 30px 10px;
+        background-color: $select;
+      }
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        & .part{
+          padding: 30px 10px;
+          background-color: $middleGray;
+          &:first-child{
+            background-color: $darkBlue;
+            & .content{
+              & h2.title{
+                color: $white;
+              }
+              & ul.list{
+                & li.item{
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+      & .content{
+        max-width: 495px;
+        & h2.title{
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          position: relative;
+          &::after{
+            display: block;
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 47px;
+            height: 2px;
+            background-color: $brown;
+          }
+        }
+        & ul.list{
+          & li.item{
+            font-size: $fz4;
+            margin-bottom: 15px;
+            font-weight: $medium;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet) {
@@ -103,6 +160,56 @@
         }
       }
     }
+    & .details{
+      display: flex;
+      flex-direction: row;
+      & .part{
+        width: 50%;
+        &:first-child{
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+          & .content {
+            padding: 50px 105px 50px 123px;
+          }
+        }
+        &:last-child {
+          & .part{
+            width: 100%;
+            padding: 10px;
+            padding: 0;
+            flex-grow: 1;
+            &:first-child{
+              justify-content: flex-start;
+              & .content {
+                padding: 50px 0 50px 105px;
+                & ul.list{
+                  & li.item{
+                    margin-bottom: 10px;
+                    &:last-child{
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+            }
+            &:last-child{
+              & .content {
+                padding: 90px 0 90px 105px;
+              }
+            }
+          }
+        }
+        & .content{
+          max-width: 495px;
+          & ul.list{
+            & li.item{
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -117,6 +224,15 @@
                 padding-right: 25px;
               }
             }
+          }
+        }
+      }
+    }
+    & .details{
+      & .part{
+        &:first-child{
+          & .content {
+            padding: 50px 105px 50px 0px;
           }
         }
       }

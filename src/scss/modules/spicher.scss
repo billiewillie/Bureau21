@@ -74,6 +74,42 @@
   }
   & .content{
     padding: 40px 0;
+    & .container{
+      & .row{
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        & .part{
+          &:first-child{
+            position: relative;
+            padding: 25px 0 0 0;
+            margin-bottom: 40px;
+            & p{
+              margin-bottom: 20px;
+              font-size: $fz4;
+              line-height: 1.3;
+              &:last-of-type{
+                margin-bottom: 0;
+              }
+            }
+            &::after{
+              display: block;
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              width: 47px;
+              height: 2px;
+              background-color: $brown;
+            }
+          }
+        }
+      }
+    }
   }
   & .site{
     background-color: $gray;
@@ -88,6 +124,11 @@
       & a.link{
         font-size: fz4;
         font-weight: $bold;
+        transition: .2s;
+        border-bottom: 2px solid transparent;
+        &:hover{
+          border-bottom: 2px solid $textColor;
+        }
       }
     }
   }
@@ -128,6 +169,38 @@
     }
     & .content{
       padding: 50px 0 120px;
+      & .container{
+        & .row{
+          flex-direction: row;
+          & .part{
+            width: 50%;
+            margin-bottom: 0;
+            &:first-child{
+              order: 2;
+              padding: 25px 0 0 120px;
+              margin-bottom: 0;
+              &::after{
+                left: 120px;
+              }
+            }
+          }
+          &:nth-child(2){
+            & .part{
+              &:first-child{
+                order: 1;
+                padding: 25px 0 0 0;
+                &::after{
+                  left: 0px;
+                }
+              }
+              &:last-child{
+                order: 2;
+                padding-left: 120px;
+              }
+            }
+          }
+        }
+      }
     }
     & .site{
       padding: 90px 0;

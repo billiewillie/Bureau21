@@ -1,0 +1,19 @@
+extends ../layout/page
+
+block content
+  .contacts
+    .container
+      .part
+        h1.title Контакты
+        .block
+          p У появились вопросы? Требуется больше деталей?
+        .block
+          p Позвоните нам
+          a(href="tel:+79219444525") +7 (921) 944 - 45 - 25
+        .block
+          p или напишите на e-mail
+          a(href="mailto:studio21.spb@gmail.com") studio21.spb@gmail.com
+        include ../includes/module/form
+      .part.visible__md
+        .pic
+          img(src="./assets/img/logo.svg", alt="img")

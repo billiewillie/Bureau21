@@ -1,33 +1,13 @@
 form.form {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #32CFBC 0%, #00C2FF 100%);
-  border-radius: 8px;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 40px;
   position: relative;
+  margin-top: 90px;
 
   & h2.title{
-    color: $white;
-    margin-bottom: 20px;
-    padding-left: 70px;
-    position: relative;
-    line-height: 1.1;
-    &::before{
-      display: block;
-      position: absolute;
-      content: '';
-      left: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      width: 51px;
-      height: 51px;
-      background-image: url('/assets/img/icons/form-icon.svg');
-      background-size: contain;
-      background-position: 50%;
-      background-repeat: no-repeat;
-    }
+    margin-bottom: 45px;
+    font-weight: $bold;
+    font-size: $fz25;
   }
 
   & p{
@@ -44,7 +24,7 @@ form.form {
       width: 100%;
       line-height: 1;
       background-color: transparent;
-      border-bottom: .5px solid $white;
+      border-bottom: .5px solid $textColor;
       cursor: pointer;
 
       &:focus{
@@ -68,6 +48,7 @@ form.form {
       line-height: $lineHeight3;
       min-height: 129px;
       border-radius: 8px;
+      background-color: transparent;
 
       & ~ label{
         top: -20px;
@@ -75,13 +56,13 @@ form.form {
     }
 
     & label{
-      font-weight:normal;
-      position:absolute;
+      font-weight: $regular;
+      position: absolute;
       pointer-events:none;
       left: 0;
       top: 0;
       transition: 0.2s ease all; 
-      color: rgba(255,255,255,.6);
+      font-size: $fz6;
     }
 
     & .bar{
@@ -111,22 +92,25 @@ form.form {
     }
 
     &:last-of-type{
-      margin-bottom: 0;
-      text-align: center;
-      margin-bottom: -20px;
       & button.button {
+        position: relative;
         display: inline-block;
-        padding: 12px 40px;
-        font-weight: $bold;
-        font-family: $mainFont;
-        margin-bottom: 0;
-        color: $white;
-        background-color: $darkBlue;
-        border-radius: 25px;
-        text-transform: capitalize;
+        font-size: $fz5;
+        background-color: transparent;
+        font-weight: $semiBold;
+        text-transform: uppercase;
         transition: .2s;
+        cursor: pointer;
+        padding: 10px 55px 10px 40px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: $textColor;
+        background-image: url('/assets/img/icons/arrow-send-black.svg');
+        background-position: 90% 50%;
+        background-size: auto 35%;
+        background-repeat: no-repeat;
         &:hover{
-          background-color: $red;
+          background-position: 95% 50%;
         }
       }
     }
@@ -135,6 +119,6 @@ form.form {
 
 @media (min-width: $smDesktopWidth) {
   form.form {
-    padding: 40px 40px 0 40px;
+    padding: 0;
   }
 }

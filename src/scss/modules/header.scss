@@ -63,13 +63,18 @@ header.header {
             text-transform: inherit;
           }
         }
+        // &:last-child{
+        //   background-color: $middleGray;
+        //   margin-top: 20px;
+        //   &:hover{
+        //     & a.link{
+        //       color: $textColor;
+        //     }
+        //   }
+        // }
         &:last-child{
-          background-color: $middleGray;
-          margin-top: 20px;
-          &:hover{
-            & a.link{
-              color: $textColor;
-            }
+          & a.link{
+            border-bottom: none;
           }
         }
         &:nth-child(4){

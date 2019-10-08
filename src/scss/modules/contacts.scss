@@ -1,0 +1,61 @@
+.contacts{
+  background-color: $gray;
+  padding: 40px 0;  
+  & .container{
+    & .part{
+      & h1.title{
+        font-size: $fz15;
+        font-weight: $regular;
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        &::after{
+          display: block;
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: 0;
+          width: 47px;
+          height: 2px;
+          background-color: $brown;
+        }
+      }
+      & .block{
+        margin-bottom: 30px;
+        line-height: 1.4;
+        & p{
+          font-weight: $medium;
+          font-size: $fz6;
+        }
+        & a{
+          font-weight: $bold;
+          font-size: $fz7;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .contacts{
+    background-color: $gray;
+  }
+}
+
+@media (min-width: $smDesktopWidth){
+  .contacts{
+    background-color: $gray;
+    padding: 140px 0 110px;
+    & .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      & .part{
+        & .pic{
+          background-color: $white;
+          padding: 13px;
+        }
+      }
+    }
+  }
+}

@@ -113,7 +113,6 @@
           & .pics{
             width: 100%;
             & .slider{
-              
               position: relative;
               & a.slider__item{
                 padding: 10%;
@@ -266,14 +265,14 @@
             padding: 0 0 70px;
             flex-direction: row;
             & .text{
-              width: 48%;
+              width: 49%;
               padding: 0 70px 0 0;
               & .list{
                 margin-bottom: 0px;
               }
             }
             & .pics{
-              width: 52%;
+              width: 51%;
             }
             &:last-child{
               padding: 45px 0 0;

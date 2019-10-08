@@ -120,11 +120,11 @@ module.exports = {
       {
         from: `${PATHS.src}/php`,
         to: `${PATHS.assets}php`
-      }
-      // {
-      //   from: `${PATHS.src}/data`,
-      //   to: `${PATHS.assets}data`
-      // },
+      },
+      {
+        from: `${PATHS.src}/data`,
+        to: `${PATHS.assets}data`
+      },
     ]),
     new webpack.ProvidePlugin({
       $: "jquery",

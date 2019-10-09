@@ -39,12 +39,23 @@
             & .pic{
               font-size: 0;
               margin-bottom: 20px;
+              overflow: hidden;
+              & img{
+                transition: .5s;
+              }
             }
             & span.title{
               font-size: $fz5;
               font-weight: $medium;
               display: block;
               text-align: center;
+            }
+            &:hover{
+              & .pic{
+                & img{
+                  transform: scale(1.1);
+                }
+              }
             }
           }
         }

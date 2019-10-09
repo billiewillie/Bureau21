@@ -118,6 +118,7 @@
                 padding: 10%;
                 position: relative;
                 background-color: $white;
+                filter: grayscale(100%);
                 &::after{
                   display: block;
                   position: absolute;
@@ -132,6 +133,15 @@
                   background-repeat: no-repeat;
                   cursor: pointer;
                   background-color: $gray;
+                }
+                & img{
+                  transition: .5s;
+                }
+                &:hover{
+                  filter: grayscale(0%);
+                  & img{
+                    transform: scale(1.05);
+                  }
                 }
               }
             }

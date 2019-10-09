@@ -76,7 +76,7 @@ form.form {
         width: 0;
         bottom: 1px; 
         position:absolute;
-        background:$white; 
+        background: $textColor; 
         transition:0.2s ease all; 
       }
       &::before{
@@ -120,5 +120,22 @@ form.form {
 @media (min-width: $smDesktopWidth) {
   form.form {
     padding: 0;
+  
+    & .form__field {
+  
+      &:nth-of-type(2),
+      &:nth-of-type(1){
+        padding-left: 120px;
+      }
+
+      input.input {
+  
+        &:focus ~ label,
+        &:valid ~ label{
+          top: 0;
+          font-size: $fz6;
+        }
+      }
+    }
   }
 }

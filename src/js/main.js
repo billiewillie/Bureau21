@@ -10,8 +10,6 @@ $(".slider").slick({
   autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplaySpeed: 4000,
-  mobileFirst: true,
 });
 
 $("form.form").submit(function() { //Change

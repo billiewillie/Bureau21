@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(
+      rel="icon" 
+      href="./assets/img/icons/favicon.png",
+      type="image/x-icon")
+    link(
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext", 
+      rel="stylesheet")
+    meta(
+      name="viewport", 
+      content="width=device-width, initial-scale=1.0")
+    meta(
+      http-equiv="X-UA-Compatible", 
+      content="ie=edge")
+    meta(
+      name='description' 
+      content="Сайт проектного бюро Bureau 21")
+    title Bureau 21
+  body.body
+    div.wrapper.wrapper--page.wrapper__project
+      header.header.hidden__md
+        a.logo(href="/")
+          img(src="/assets/img/logo.svg", alt="logo")
+        .burger.hidden__md
+          input#menu-switch(type="checkbox")
+          nav#navigation
+            ul.list
+              //- li.item
+              //-   a.link(href="") о бюро
+              li.item
+                a.link(href="/contacts.html") контакты
+              //- li.item
+              //-   a.link(href="") События
+              li.item
+                a.link(href="/partners.html") партнеры
+              li.item
+                a.link(href="/spicher.html")
+                  span.special Онлайн-галерея
+                  br
+                  | Штефана Шпихера
+            .about
+              p Более 19 лет успешной работы
+              p Более 200 частных объектов
+              p Более 70 общественных объектов
+              p 
+                | Обширная география: 
+                br
+                | Россия, США, Италия, Германия, Франция, Латвия
+            .contact
+              .call
+                a.number(href="tel:+79219444525") Позвонить
+              .call
+                a.number(href="mailto:studio21.spb@gmail.com") Написать
+          label.menu-switch(for='menu-switch')
+            span
+      include ../includes/module/sidebar
+      block content
+      include ../includes/module/gallery
+      include ../includes/module/footer

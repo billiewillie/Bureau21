@@ -1,6 +1,6 @@
 import "slick-carousel";
 import "lightbox2";
-import check from "./component/scroll";
+// import check from "./component/scroll";
 import tab from "./component/tab";
 
 $(".slider").slick({

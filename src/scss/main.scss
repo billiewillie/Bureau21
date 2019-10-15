@@ -30,10 +30,17 @@ a {
   flex-direction: column;
   justify-content: space-between;
 
-  &.wrapper__page{
+  &.wrapper--page{
     background-color: $white;
-    padding-top: 140px;
     justify-content: space-between;
+    &.wrapper__project{
+      & .page__top{
+        background-position: 50%;
+      }
+      & .gallery{
+        background-color: $gray;
+      }
+    }
   }
 
   &.no-scroll {
@@ -68,6 +75,7 @@ h2.title {
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 152px;
   & h1.title{
     color: $white;
     font-size: $fz10;
@@ -120,6 +128,8 @@ h2.title {
 
 @import "modules/spicher.scss";
 
+@import "modules/project.scss";
+
 @import "modules/contacts.scss";
 
 @import "modules/partners.scss";
@@ -162,6 +172,11 @@ h2.title {
     &.wrapper--page{
       & .container{
         padding: 0 10px 0 133px;
+      }
+      &.wrapper__project{
+        & .page__top{
+          min-height: 700px;
+        }
       }
     }
   }

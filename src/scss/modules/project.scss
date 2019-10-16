@@ -108,6 +108,11 @@
       background-image: url('/assets/img/project/commerce/project-2/bg-small.jpg');
     }
   }
+  &.project__commerce--3{
+    & .page__top{
+      background-image: url('/assets/img/project/commerce/project-3/bg-small.jpg');
+    }
+  }
 }
 
 @media (min-width: $tablet) {
@@ -145,6 +150,11 @@
     &.project__commerce--1{
       & .page__top{
         background-image: url('/assets/img/project/commerce/project-1/bg-ipad.jpg');
+      }
+    }
+    &.project__commerce--3{
+      & .page__top{
+        background-image: url('/assets/img/project/commerce/project-3/bg-ipad.jpg');
       }
     }
   }
@@ -282,6 +292,30 @@
     &.project__commerce--1{
       & .page__top{
         background-image: url('/assets/img/project/commerce/project-1/bg.jpg');
+      }
+    }
+    &.project__commerce--3{
+      & .page__top{
+        background-image: url('/assets/img/project/commerce/project-3/bg.jpg');
+      }
+      & .content{
+        & .container{
+          & .row{
+            &:first-child{
+              margin-bottom: 110px;
+            }
+            &:nth-child(2){
+              align-items: center;
+              & .part{
+                & a{
+                  &:first-child{
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

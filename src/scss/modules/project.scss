@@ -103,6 +103,11 @@
       background-image: url('/assets/img/project/commerce/project-1/bg-small.jpg');
     }
   }
+  &.project__commerce--2{
+    & .page__top{
+      background-image: url('/assets/img/project/commerce/project-2/bg-small.jpg');
+    }
+  }
 }
 
 @media (min-width: $tablet) {

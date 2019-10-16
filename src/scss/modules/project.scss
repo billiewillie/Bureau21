@@ -257,6 +257,15 @@
       & .page__top{
         background-image: url('/assets/img/project/private/project-3/bg.jpg');
       }
+      & .content {
+        & .container{
+          & .row{
+            &:first-child{
+              margin-bottom: 110px;
+            }
+          }
+        }
+      }
     }
     &.project__private--4{
       & .page__top{

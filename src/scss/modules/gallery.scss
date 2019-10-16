@@ -72,6 +72,15 @@
           & ul.list{
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            & li.item{
+              width: 30%;
+              margin-right: 5%;
+              &:nth-child(3n){
+                margin-right: 0;
+              }
+            }
           }
         }
       }

@@ -73,6 +73,11 @@
       background-image: url('/assets/img/project/private/project-4/bg-small.jpg');
     }
   }
+  &.project__private--5{
+    & .page__top{
+      background-image: url('/assets/img/project/private/project-5/bg-small.jpg');
+    }
+  }
 }
 
 @media (min-width: $tablet) {
@@ -95,6 +100,11 @@
     &.project__private--4{
       & .page__top{
         background-image: url('/assets/img/project/private/project-4/bg-ipad.jpg');
+      }
+    }
+    &.project__private--5{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-5/bg-ipad.jpg');
       }
     }
   }
@@ -201,6 +211,27 @@
     &.project__private--4{
       & .page__top{
         background-image: url('/assets/img/project/private/project-4/bg.jpg');
+      }
+    }
+    &.project__private--5{
+      & .content{
+        & .container{
+          & .row{
+            &:first-child{
+              margin-bottom: 110px;
+            }
+            &:nth-child(2){
+              align-items: center;
+              & .part{
+                & a{
+                  &:first-child{
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -50,6 +50,21 @@
             }
           }
         }
+        &:nth-child(4){
+          & .part{
+            align-items: flex-end;
+            justify-content: space-between;
+            &:first-child{
+              align-items: flex-start;
+              & a{
+                &:last-child{
+                  max-width: 367px;
+                }
+              }
+            }
+            
+          }
+        }
       }
     }
   }
@@ -76,6 +91,11 @@
   &.project__private--5{
     & .page__top{
       background-image: url('/assets/img/project/private/project-5/bg-small.jpg');
+    }
+  }
+  &.project__private--6{
+    & .page__top{
+      background-image: url('/assets/img/project/private/project-6/bg-small.jpg');
     }
   }
 }
@@ -105,6 +125,11 @@
     &.project__private--5{
       & .page__top{
         background-image: url('/assets/img/project/private/project-5/bg-ipad.jpg');
+      }
+    }
+    &.project__private--6{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-6/bg-ipad.jpg');
       }
     }
   }
@@ -232,6 +257,11 @@
             }
           }
         }
+      }
+    }
+    &.project__private--6{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-6/bg.jpg');
       }
     }
   }

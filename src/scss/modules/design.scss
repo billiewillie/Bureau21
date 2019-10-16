@@ -112,28 +112,13 @@
           }
           & .pics{
             width: 100%;
+            
             & .slider{
               position: relative;
               & a.slider__item{
                 padding: 10%;
                 position: relative;
-                background-color: $white;
                 filter: grayscale(100%);
-                &::after{
-                  display: block;
-                  position: absolute;
-                  content: '';
-                  right: 0;
-                  bottom: 0px;
-                  width: 40px;
-                  height: 40px;
-                  background-image: url('/assets/img/icons/scale-icon.svg');
-                  background-size: 50%;
-                  background-position: 50%;
-                  background-repeat: no-repeat;
-                  cursor: pointer;
-                  background-color: $gray;
-                }
                 & img{
                   transition: .5s;
                 }
@@ -143,6 +128,13 @@
                     transform: scale(1.05);
                   }
                 }
+              }
+              & .slick-list{
+                background-image: url('/assets/img/icons/scale-icon.svg');
+                background-size: 24px;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                background-color: #fff;
               }
             }
           }

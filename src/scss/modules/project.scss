@@ -279,16 +279,6 @@
             &:first-child{
               margin-bottom: 110px;
             }
-            &:nth-child(2){
-              align-items: center;
-              & .part{
-                & a{
-                  &:first-child{
-                    margin-bottom: 0;
-                  }
-                }
-              }
-            }
           }
         }
       }

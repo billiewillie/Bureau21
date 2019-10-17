@@ -36,3 +36,11 @@ $('.scroll').on('click', function(e){
     scrollTop: $(attr).offset().top
   }, 500);
 });
+
+const sidebar = document.querySelector('.sidebar');
+const sidebarTitle = sidebar.querySelector('h3.title');
+const string = window.location.href;
+if(sidebar && (string.split('project').length > 1)){
+  sidebar.setAttribute('href', '/design.html');
+  sidebarTitle.innerHTML = 'страница дизайна'
+}

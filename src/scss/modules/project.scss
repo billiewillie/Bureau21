@@ -98,6 +98,11 @@
       background-image: url('/assets/img/project/private/project-6/bg-small.jpg');
     }
   }
+  &.project__private--7{
+    & .page__top{
+      background-image: url('/assets/img/project/private/project-7/bg-small.jpg');
+    }
+  }
   &.project__commerce--1{
     & .page__top{
       background-image: url('/assets/img/project/commerce/project-1/bg-small.jpg');
@@ -145,6 +150,11 @@
     &.project__private--6{
       & .page__top{
         background-image: url('/assets/img/project/private/project-6/bg-ipad.jpg');
+      }
+    }
+    &.project__private--7{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-7/bg-ipad.jpg');
       }
     }
     &.project__commerce--1{

@@ -42,5 +42,5 @@ const sidebarTitle = sidebar.querySelector('h3.title');
 const string = window.location.href;
 if(sidebar && (string.split('project').length > 1)){
   sidebar.setAttribute('href', '/design.html');
-  sidebarTitle.innerHTML = 'страница дизайна'
+  sidebarTitle.innerHTML = 'назад на страницу дизайн'
 }

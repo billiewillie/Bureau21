@@ -103,6 +103,11 @@
       background-image: url('/assets/img/project/private/project-7/bg-small.jpg');
     }
   }
+  &.project__private--8{
+    & .page__top{
+      background-image: url('/assets/img/project/private/project-8/bg-small.jpg');
+    }
+  }
   &.project__commerce--1{
     & .page__top{
       background-image: url('/assets/img/project/commerce/project-1/bg-small.jpg');
@@ -155,6 +160,11 @@
     &.project__private--7{
       & .page__top{
         background-image: url('/assets/img/project/private/project-7/bg-ipad.jpg');
+      }
+    }
+    &.project__private--8{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-8/bg-ipad.jpg');
       }
     }
     &.project__commerce--1{
@@ -278,8 +288,24 @@
       }
     }
     &.project__private--4{
-      & .page__top{
-        background-image: url('/assets/img/project/private/project-4/bg.jpg');
+      & .content{
+        & .container{
+          & .row{
+            &:first-child{
+              margin-bottom: 110px;
+            }
+            &:nth-child(2){
+              align-items: center;
+              & .part{
+                & a{
+                  &:first-child{
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     &.project__private--5{
@@ -296,6 +322,30 @@
     &.project__private--6{
       & .page__top{
         background-image: url('/assets/img/project/private/project-6/bg.jpg');
+      }
+    }
+    &.project__private--8{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-8/bg.jpg');
+      }
+      & .content{
+        & .container{
+          & .row{
+            &:first-child{
+              margin-bottom: 110px;
+            }
+            &:nth-child(2){
+              align-items: center;
+              & .part{
+                & a{
+                  &:first-child{
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     &.project__commerce--1{

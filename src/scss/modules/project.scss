@@ -108,6 +108,16 @@
       background-image: url('/assets/img/project/private/project-8/bg-small.jpg');
     }
   }
+  &.project__private--9{
+    & .page__top{
+      background-image: url('/assets/img/project/private/project-9/bg-small.jpg');
+    }
+  }
+  &.project__private--10{
+    & .page__top{
+      background-image: url('/assets/img/project/private/project-10/bg-small.jpg');
+    }
+  }
   &.project__commerce--1{
     & .page__top{
       background-image: url('/assets/img/project/commerce/project-1/bg-small.jpg');
@@ -165,6 +175,16 @@
     &.project__private--8{
       & .page__top{
         background-image: url('/assets/img/project/private/project-8/bg-ipad.jpg');
+      }
+    }
+    &.project__private--9{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-9/bg-ipad.jpg');
+      }
+    }
+    &.project__private--10{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-10/bg-ipad.jpg');
       }
     }
     &.project__commerce--1{
@@ -346,6 +366,16 @@
             }
           }
         }
+      }
+    }
+    &.project__private--9{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-9/bg.jpg');
+      }
+    }
+    &.project__private--10{
+      & .page__top{
+        background-image: url('/assets/img/project/private/project-10/bg.jpg');
       }
     }
     &.project__commerce--1{

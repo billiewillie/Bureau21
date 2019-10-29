@@ -12,6 +12,23 @@ $(".slider").slick({
   slidesToScroll: 1,
 });
 
+$(".news__slider").slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
 $("form.form").submit(function() { //Change
   var th = $(this);
   $.ajax({

@@ -1,0 +1,81 @@
+.news{
+  & .text{
+    background-color: $gray;
+    padding: 40px 0;
+    & .container{
+      & h1.title{
+        font-size: $fz10;
+        font-weight: $bold;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      & h2.subtitle{
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        font-size: $fz6;
+        font-weight: $bold;
+        font-weight: $bold;
+        &::after{
+          display: block;
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: 0;
+          width: 47px;
+          height: 2px;
+          background-color: $brown;
+        }
+      }
+      & p{
+        font-size: $fz6;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  & .photo{
+    padding: 40px 0;
+    & .container{
+      & ul.list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        & li.item{
+          width: 100%;
+          text-align: center;
+          & a{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .news{
+    & .photo{
+      padding: 80px 0;
+      & .container{
+        & ul.list{
+          & li.item{
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $smDesktopWidth){
+  .news{
+    & .text{
+      padding: 145px 0 55px;
+      & .container{
+        & h1.title{
+          font-size: $fz15;
+        }
+      }
+    }
+  }
+}

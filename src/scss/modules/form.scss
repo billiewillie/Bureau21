@@ -2,7 +2,10 @@ form.form {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 90px;
+
+  & .part{
+    padding: 0;
+  }
 
   & h2.title{
     margin-bottom: 45px;
@@ -92,6 +95,7 @@ form.form {
     }
 
     &:last-of-type{
+      margin-bottom: 0;
       & button.button {
         position: relative;
         display: inline-block;
@@ -120,6 +124,15 @@ form.form {
 @media (min-width: $smDesktopWidth) {
   form.form {
     padding: 0;
+    flex-direction: row;
+    align-items: flex-end;
+
+    & .part{
+      width: 50%;
+      &:nth-child(2){
+        padding: 0;
+      }
+    }
   
     & .form__field {
   

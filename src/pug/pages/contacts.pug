@@ -2,18 +2,21 @@ extends ../layout/page
 
 block content
   .contacts
-    .container
-      .part
-        h1.title Контакты
-        .block
-          p У вас появились вопросы? Требуется больше деталей?
-        .block
-          p Позвоните нам
-          a(href="tel:+79219444525") +7 (921) 944 - 45 - 25
-        .block
-          p или напишите на e-mail
-          a(href="mailto:office@21.spb.ru") office@21.spb.ru
+    .part
+      .container
+        .top
+          h1.title Контакты
+          .pic.visible__md
+            img(src="./assets/img/logo.svg", alt="img")
+        .bottom
+          .block
+            .pic
+              img(src="./assets/img/seo.jpg", alt="img")
+          .block
+            h2.title Екатерина Александрова
+            p Архитектор, дизайнер
+            a(href="tel:+79219444525") +7 (921) 944 - 45 - 25
+            a(href="mailto:office@21.spb.ru") office@21.spb.ru
+    .part
+      .container
         include ../includes/module/form
-      .part.visible__md
-        .pic
-          img(src="./assets/img/logo.svg", alt="img")

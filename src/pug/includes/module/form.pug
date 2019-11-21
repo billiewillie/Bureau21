@@ -1,18 +1,20 @@
 form.form
-  input(type="hidden" name="project_name" value="Bureau 21")
-  input(type="hidden" name="admin_email" value="office@21.spb.ru")
-  input(type="hidden" name="form_subject" value="Вопрос с формы сайта 21.spb.ru")
-  h2.title Оставьте заявку
-  .form__field
-    input.input(type="text" name='имя' required)
-    span.bar
-    label Ваше имя:
-  .form__field
-    input.input(type="text" name='email' required)
-    span.bar
-    label Ваш e-mail:
-  .form__field
-    textarea.textarea(name='вопрос' required)
-    label Сообщение:
-  .form__field
-    button.button Отправить
+  .part
+    input(type="hidden" name="project_name" value="Bureau 21")
+    input(type="hidden" name="admin_email" value="office@21.spb.ru")
+    input(type="hidden" name="form_subject" value="Вопрос с формы сайта 21.spb.ru")
+    h2.title Оставьте заявку
+    .form__field
+      input.input(type="text" name='имя' required)
+      span.bar
+      label Ваше имя:
+    .form__field
+      input.input(type="text" name='email' required)
+      span.bar
+      label Ваш e-mail:
+    .form__field
+      textarea.textarea(name='вопрос' required)
+      label Сообщение:
+  .part
+    .form__field
+      button.button Отправить

@@ -62,6 +62,25 @@
           }
         }
       }
+      & .text__block{
+        margin-bottom: 40px;
+        & h2.title{
+          font-size: $fz10;
+          margin-bottom: 20px;
+        }
+        & p{
+          margin-bottom: 20px;
+          & a{
+            font-weight: $bold;
+            color: $midBlue;
+            border: 1px solid transparent;
+            transition: .2s;
+            &:hover{
+              border-bottom: 1px solid $midBlue;
+            }
+          }
+        }
+      }
     }
   }
 }

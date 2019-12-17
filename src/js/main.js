@@ -88,3 +88,9 @@ if(sidebar && (string.split('project').length > 1)){
   sidebar.setAttribute('href', '/design.html');
   sidebarTitle.innerHTML = 'назад на страницу дизайн'
 }
+
+if($('.file__status')){
+  $('#upload').change(function(){
+    $('.file__status').html('Файл загружен')
+  })
+}

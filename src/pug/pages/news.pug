@@ -1,0 +1,31 @@
+extends ../layout/page
+
+block content
+  .news
+    .text
+      .container
+        h1.title События
+        ul.list
+          li.item
+            a(href="news-1.html")
+              .pic
+                .inner
+                  img(src="./assets/img/news/news-1/1.jpg", alt="img")
+              h2.title Штефан&nbsp;Шпихер презентовал в Санкт&#8209;Петербурге работы серии ELEMENTALS
+          li.item
+            a(href="news-2.html")
+              .pic
+                .inner
+                  img(src="./assets/img/news/news-2/bg.jpg", alt="img")
+              h2.title Представлен цвет 2020 года
+    .feed
+      .container
+        ul.list
+          li.item
+            a(href="news-1.html")
+              .pic(style="background-image: url('/assets/img/news/news-1/1.jpg')")
+              h2.title Штефан&nbsp;Шпихер презентовал в Санкт&#8209;Петербурге работы серии ELEMENTALS
+          li.item
+            a(href="news-2.html")
+              .pic(style="background-image: url('/assets/img/news/news-2/bg.jpg')")
+              h2.title Представлен цвет 2020 года

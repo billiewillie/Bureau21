@@ -4,47 +4,83 @@
     padding: 40px 0;
     & .container{
       & h1.title{
-        font-size: $fz10;
-        font-weight: $bold;
+        font-size: $fz15;
+        font-weight: $regular;
         position: relative;
-        margin-bottom: 20px;
-      }
-      & h2.subtitle{
-        position: relative;
-        padding-bottom: 30px;
-        margin-bottom: 30px;
-        font-size: $fz6;
-        font-weight: $bold;
-        font-weight: $bold;
-        &::after{
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+        &:after {
           display: block;
           position: absolute;
-          content: '';
+          content: "";
           left: 0;
           bottom: 0;
           width: 47px;
           height: 2px;
-          background-color: $brown;
+          background-color: #584f53;
         }
       }
-      & p{
-        font-size: $fz6;
-        margin-bottom: 10px;
+      & ul.list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        & li.item{
+          margin-bottom: 50px;
+          & .pic{
+            margin-bottom: 35px;
+            overflow: hidden;
+            & .inner{
+              height: 0;
+              padding-top: 100%;
+              position: relative;
+              & img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          & h2.title{
+            position: relative;
+            padding: 0 10px;
+            font-size: $fz10;
+            font-weight: $bold;
+          }
+        }
       }
     }
   }
-  & .photo{
+  & .feed{
     padding: 40px 0;
     & .container{
       & ul.list{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         & li.item{
           width: 100%;
           text-align: center;
+          margin-bottom: 40px;
           & a{
             display: block;
+            & .pic{
+              width: 215px;
+              height: 140px;
+              overflow: hidden;
+              margin: auto;
+              margin-bottom: 10px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 50%;
+            }
+            & h2.title{
+              font-size: $fz10;
+              text-align: left;
+              width: 70%;
+            }
           }
         }
       }
@@ -54,12 +90,31 @@
 
 @media (min-width: $tablet) {
   .news{
-    & .photo{
+    & .text{
+      & .container{
+        & ul.list{
+          flex-direction: row;
+          & li.item{
+            width: 48%;
+            & h2.title{
+              padding: 0 30px;
+              font-size: $fz25;
+            }
+          }
+        }
+      }
+    }
+    & .feed{
       padding: 80px 0;
       & .container{
         & ul.list{
           & li.item{
-            padding: 0 10px;
+            & a{
+              display: flex;
+              & .pic{
+                margin: 0 50px 0 0;
+              }
+            }
           }
         }
       }

@@ -1,5 +1,6 @@
 import "slick-carousel";
 import "lightbox2";
+import "jquery-validation";
 // import check from "./component/scroll";
 import tab from "./component/tab";
 
@@ -7,7 +8,16 @@ $(".slider").slick({
   dots: true,
   arrows: true,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+
+$(".slider-ideas").slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
 });
@@ -38,12 +48,29 @@ $("form.form").submit(function() { //Change
   }).done(function() {
     alert("Спасибо! Мы с вами скоро свяжемся.");
     setTimeout(function() {
-      // Done Functions
       th.trigger("reset");
     }, 1000);
   });
   return false;
 });
+
+$("#sendform").validate({
+  submitHandler: function(form){
+    var form = document.forms.sendform;
+    var formData = new FormData(form);
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "./assets/php/mail-file.php");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        alert("Спасибо! Мы с вами скоро свяжемся.");
+        setTimeout(function() {
+          $("#sendform").trigger("reset");
+        }, 1000);
+      }
+    };
+    xhr.send(formData);
+  }
+}); 
 
 $('.scroll').on('click', function(e){
   e.preventDefault();

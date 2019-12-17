@@ -118,4 +118,51 @@ block content
               li.item Собственные надежные ремонтные бригады
               li.item Квалифицированные узкие специалисты
               li.item Постоянный авторский надзор
+    .ideas
+      .container
+        h2.title 
+          | Идеи для 
+          br
+          | вдохновения
+        .content
+          .part
+            .slider-ideas#slider-2
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-1.jpg')
+                img(src="/assets/img/ideas/idea-1.jpg", alt="img")
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-2.jpg')
+                img(src="/assets/img/ideas/idea-2.jpg", alt="img")
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-3.jpg')
+                img(src="/assets/img/ideas/idea-3.jpg", alt="img")
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-4.jpg')
+                img(src="/assets/img/ideas/idea-4.jpg", alt="img")
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-5.jpg')
+                img(src="/assets/img/ideas/idea-5.jpg", alt="img")
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-6.jpg')
+                img(src="/assets/img/ideas/idea-6.jpg", alt="img")
+              a.slider__item(data-lightbox='idea' href='/assets/img/ideas/idea-7.jpg')
+                img(src="/assets/img/ideas/idea-7.jpg", alt="img")
+          .part
+            h3.title Чтобы мы смогли рассчитать примерную стоимость работ, заполните, пожалуйста, анкету
+            .button
+              a(href="./assets/img/brief.docx" download) Скачать анкету
+            form#sendform(action="" method="post" enctype="multipart/form-data")
+              .form__field
+                label Ваше имя:
+                input.required(name="name" value="" size="" type="text")
+              .form__field
+                label Ваш e-mail:
+                input(name="email" value="" size="" type="email")
+              .form__field
+                label Телефон:
+                input.required(name="tel" value="" size="" type="tel")
+              .form__field
+                label 
+                  | Прикрепите 
+                  br
+                  | заполненную 
+                  br
+                  | анкету
+                input(name="file" value="" type="file")
+              .form__field
+                input(value="Отправить" name="sendMail" type="submit")
     include ../includes/module/gallery

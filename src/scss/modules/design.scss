@@ -213,6 +213,103 @@
       }
     }
   }
+  & .ideas{
+    padding: 30px 0;
+    & .container{
+      display: flex;
+      flex-direction: column;
+      & h2.title{
+        font-size: $fz15;
+        font-weight: $regular;
+        margin-bottom: 50px;
+      }
+      & .content{
+        display: flex;
+        flex-direction: column;
+        & .part{
+          & h3.title{
+            font-size: $fz10;
+            font-weight: $bold;
+            margin-bottom: 45px;
+          }
+          &:nth-child(1){
+            margin-bottom: 20px;
+          }
+          & .button{
+            background-color: $gray;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 50px;
+            & a{
+              padding: 15px 25px;
+              background-image: none;
+            }
+          }
+          & form{
+            display: flex;
+            flex-wrap: wrap;
+            & .form__field{
+              width: 100%;
+              display: flex;
+              margin-bottom: 30px;
+              justify-content: space-between;
+              & input{
+                border-bottom: 1px solid $textColor;
+                flex: auto;
+              }
+              & label{
+                width: 120px;
+                display: inline-block;
+              }
+              &:last-child,
+              &:nth-last-child(2){
+                width: 50%;
+                margin-bottom: 0;
+              }
+              &:nth-last-child(2){
+                position: relative;
+                font-size: 0;
+                height: 42px;
+                & label{
+                  color: $darkGray;
+                  position: absolute;
+                  font-size: $fz2;
+                  width: 100%;
+                  background-image: url('/assets/img/icons/icon-clip.svg');
+                  background-repeat: no-repeat;
+                  background-position: 90% 50%;
+                  background-size: 28px 28px;
+                }
+                & input{
+                  height: 42px;
+                  width: 100%;
+                  background: transparent;
+                  border-color: transparent;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  opacity: 0;
+                }
+              }
+              &:last-child{
+                & input{
+                  width: 100%;
+                  border: 3px solid $textColor;
+                  background-color: transparent;
+                  text-transform: uppercase;
+                  font-weight: $bold;
+                  padding: 0;
+                  height: 42px;
+                  line-height: 40px;
+                  letter-spacing: $ls2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet) {
@@ -335,6 +432,25 @@
           & ul.list{
             & li.item{
               margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+    & .ideas{
+      padding: 100px 0;
+      & .container{
+        & .content{
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: stretch;
+          & .part{
+            width: 48%;
+            & h3.title{
+              font-size: $fz25;
+            }
+            &:nth-child(1){
+              margin-bottom: 0px;
             }
           }
         }

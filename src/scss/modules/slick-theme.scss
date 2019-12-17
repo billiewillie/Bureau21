@@ -71,6 +71,16 @@
 .slick-next {
   left: 24px;
 }
+
+.ideas .slick-next {
+  left: auto;
+  right: 0;
+}
+
+.ideas .slick-prev {
+  left: auto;
+  right: 24px;
+}
 [dir="rtl"] .slick-next {
   right: auto;
   left: -25px;

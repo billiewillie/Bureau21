@@ -5,7 +5,7 @@ import "jquery-validation";
 import tab from "./component/tab";
 
 $(".slider").slick({
-  dots: true,
+  dots: false,
   arrows: true,
   infinite: true,
   autoplay: true,

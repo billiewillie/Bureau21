@@ -1,5 +1,5 @@
 <?php
-$to = 'v.belinovich@uno-agency.ru';
+$to = 'office@21.spb.ru';
 
 if ( isset( $_POST['sendMail'] ) ) {
   $name  = substr( $_POST['name'], 0, 64 );

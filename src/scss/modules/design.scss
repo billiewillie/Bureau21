@@ -118,15 +118,8 @@
               & a.slider__item{
                 padding: 10%;
                 position: relative;
-                filter: grayscale(100%);
                 & img{
                   transition: .5s;
-                }
-                &:hover{
-                  filter: grayscale(0%);
-                  & img{
-                    transform: scale(1.05);
-                  }
                 }
               }
               & .slick-list{
@@ -213,7 +206,6 @@
       }
     }
   }
-
   & .confirm{
     padding: 30px 0 0;
     & .container{
@@ -244,7 +236,6 @@
       }
     }
   }
-
   & .ideas{
     padding: 30px 0;
     & .container{
@@ -416,6 +407,17 @@
             }
             & .pics{
               width: 51%;
+              & .slider{
+                & a.slider__item{
+                  filter: grayscale(100%);
+                  &:hover{
+                    filter: grayscale(0%);
+                    & img{
+                      transform: scale(1.05);
+                    }
+                  }
+                }
+              }
             }
             &:last-child{
               padding: 45px 0 0;

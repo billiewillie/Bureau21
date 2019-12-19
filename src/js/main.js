@@ -87,6 +87,9 @@ const string = window.location.href;
 if(sidebar && (string.split('project').length > 1)){
   sidebar.setAttribute('href', '/design.html');
   sidebarTitle.innerHTML = 'назад на страницу дизайн'
+} else if(sidebar && (string.split('news-').length > 1)) {
+  sidebar.setAttribute('href', '/news.html');
+  sidebarTitle.innerHTML = 'назад к новостям'
 }
 
 if($('.file__status')){

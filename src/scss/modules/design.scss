@@ -112,11 +112,12 @@
           }
           & .pics{
             width: 100%;
-            
+            display: flex;
+            flex-direction: column;
             & .slider{
               position: relative;
               & a.slider__item{
-                padding: 10%;
+                // padding: 10%;
                 position: relative;
                 & img{
                   transition: .5s;
@@ -134,6 +135,8 @@
           &:last-child{
             padding: 25px 0;
             position: relative;
+            display: flex;
+            flex-direction: column;
             &::after{
               display: block;
               position: absolute;
@@ -143,6 +146,29 @@
               width: 104%;
               height: 1px;
               background-color: $textColor;
+            }
+            & .text{
+              width: 100%;
+              padding: 0;
+              text-align: center;
+              margin-bottom: 60px;
+              & h2.title::after{
+                right: 0;
+                margin: auto;
+              }
+            }
+            & .pics__block{
+              width: 100%;
+              order: 2;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              & .pics{
+                margin-bottom: 60px;
+                &:last-child{
+                  margin-bottom: 0;
+                }
+              }
             }
           }
         }
@@ -426,7 +452,15 @@
               }
               & .text {
                 order: 2;
-                padding: 0 0 0 70px;
+              }
+              & .pics__block{
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                & .pics{
+                  width: 47%;
+                  margin-bottom: 0;
+                }
               }
             }
           }
@@ -582,11 +616,6 @@
           & .part{
             & .text{
               padding: 0 140px 0 0;
-            }
-            &:last-child{
-              & .text {
-                padding: 0 0 0 90px;
-              }
             }
           }
         }

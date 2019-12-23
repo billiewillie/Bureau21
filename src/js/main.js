@@ -13,6 +13,25 @@ $(".slider").slick({
   slidesToScroll: 1,
 });
 
+$(".slider__photo").slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+
+$(".slider__models").slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplaySpeed: 5000,
+});
+
 $(".slider-ideas").slick({
   dots: false,
   arrows: true,

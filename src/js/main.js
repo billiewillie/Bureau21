@@ -4,23 +4,21 @@ import "jquery-validation";
 // import check from "./component/scroll";
 import tab from "./component/tab";
 
-$(".slider").slick({
-  dots: false,
-  arrows: true,
-  infinite: true,
-  autoplay: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
+function sliderStart(el) {
+  el.slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+}
 
-$(".slider__photo").slick({
-  dots: false,
-  arrows: true,
-  infinite: true,
-  autoplay: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
+sliderStart($(".slider"));
+sliderStart($(".slider__photo"));
+sliderStart($(".slider-ideas"));
+sliderStart($(".news-slider"));
 
 $(".slider__models").slick({
   dots: false,
@@ -30,15 +28,6 @@ $(".slider__models").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplaySpeed: 5000,
-});
-
-$(".slider-ideas").slick({
-  dots: false,
-  arrows: true,
-  infinite: true,
-  autoplay: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
 });
 
 $(".news__slider").slick({

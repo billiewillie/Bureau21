@@ -34,6 +34,7 @@ a {
     background-color: $white;
     justify-content: space-between;
     &.wrapper__project{
+      padding-top: 70px;
       & .page__top{
         background-position: 50%;
       }
@@ -176,6 +177,7 @@ h2.title {
         padding: 0 10px 0 133px;
       }
       &.wrapper__project{
+        padding-top: 0;
         & .page__top{
           min-height: 700px;
         }

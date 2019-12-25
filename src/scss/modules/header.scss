@@ -7,6 +7,13 @@ header.header {
   width: 100%;
   position: relative;
 
+  &.header__fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   & a.logo{
     height: 70px;
     padding: 10px 0 10px 50px;

@@ -1,7 +1,7 @@
 import "slick-carousel";
 import "lightbox2";
 import "jquery-validation";
-// import check from "./component/scroll";
+import check from "./component/scroll";
 import tab from "./component/tab";
 
 function sliderStart(el) {
@@ -16,9 +16,17 @@ function sliderStart(el) {
 }
 
 sliderStart($(".slider"));
-sliderStart($(".slider__photo"));
 sliderStart($(".slider-ideas"));
 sliderStart($(".news-slider"));
+
+$(".slider__photo").slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
 
 $(".slider__models").slick({
   dots: false,

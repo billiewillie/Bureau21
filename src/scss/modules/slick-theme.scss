@@ -6,8 +6,8 @@
   position: absolute;
   bottom: 100%;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   padding: 0;
   -webkit-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
@@ -39,8 +39,8 @@
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   opacity: 1;
   background-image: url("/assets/img/icons/slick-arrow.svg");
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@
 .ideas .slick-prev,
 .pics .slick-prev {
   left: auto;
-  right: 24px;
+  right: 36px;
 }
 [dir="rtl"] .slick-next {
   right: auto;
